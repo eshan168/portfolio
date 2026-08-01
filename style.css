@@ -1,6 +1,17 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
 #container{
     background-color: black;
     background-image: url(images/background.jpg);
+    
+    margin: 0;
+    padding: 0;
 }
 
 #mainpage{
@@ -99,6 +110,10 @@
     background-color: hsl(342, 100%, 81%);
 }
 
+#MasterMind{
+    background-color: hsl(137, 100%, 81%);
+}
+
 #Pongvid{
     border: solid hsl(64, 100%, 81%);
 }
@@ -111,8 +126,12 @@
     border: solid hsl(188, 100%, 81%);
 }
 
-#Websitevid{
+#Calculatorsvid{
     border: solid hsl(342, 100%, 81%);
+}
+
+#MasterMindvid{
+    border: solid hsl(137, 100%, 81%);
 }
 
 .projects a{
@@ -204,8 +223,14 @@ video:hover{
 
 @media (max-width: 768px) {
 
+    html {
+        font-size: 13px;
+    }
+
     #mainpage{
         width: 100%;
+        margin: 0;
+        border-radius: 0;
     }
 
     #titletext{

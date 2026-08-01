@@ -41,6 +41,7 @@
                     <li onclick="TicTacToe()">Tic-Tac-Toe</li>
                     <li onclick="Gravity()">Gravity</li>
                     <li onclick="Calculators()">Calculators</li>
+                    <li onclick="MasterMind()">Master Mind</li>
                 </ul>
             </nav>
         </header>
@@ -86,7 +87,7 @@
         </div>
 
         <div id="Gravity" class="projects">
-            <a href="https://github.com/eshan168/python/tree/main/Orbit">
+            <a href="https://github.com/eshan168/orbitsimulator">
                 <h1 class="text projecttitle">Gravity</h1>
             </a>
 
@@ -98,24 +99,21 @@
             </div>
 
             <p class="descriptiontext text">
-                The program calculates each of the bodies gravitational acceleration on each
-                other then adjusts their vectors and then moves them based on the time step each
-                frame and follows that step with a trail. It is already progrmamed with a scale
-                model of the solar system with every pixel being one million kilometers and all 
-                the calculations are and vectors are to scale. There is also a sidebar in the gui
-                to add, modify, and delete bodies and to change the focus of the simulation.
-                This was also made in python tkinter.
+                The program uses Velocity Verlet integration to simulate orbits more accurately 
+                than Semi Implicit Euler and was made with plain javascript. There's also 
+                a toolbar on the side to add, modify, and delete bodies and to change the 
+                focus of the simulation. https://eshan168.github.io/orbitsimulator/
             </p>
         </div>
 
         <div id="Calculators" class="projects">
-            <a href="https://github.com/eshan168/regression">
+            <a href="https://github.com/eshan168/python/tree/main/MasterMind">
                 <h1 class="text projecttitle">Calculators</h1>
             </a>
 
             <div class="videocontainer">
                 <video autoplay loop muted playsinline id="Calculatorsvid">
-                    <source src="videos/calculator.mp4" type="video/mp4">
+                    <source src="videos/Calculator.mp4" type="video/mp4">
                     Old Browser
                 </video>
             </div>
@@ -127,6 +125,28 @@
                 either a table or text box and outputs the least squares regression line and the test
                 statistic and p value of its slope. https://eshan168.github.io/statcalculator/ +
                 https://eshan168.github.io/regression/
+            </p>
+        </div>
+
+        <div id="MasterMind" class="projects">
+            <a href="https://github.com/eshan168/regression">
+                <h1 class="text projecttitle">MasterMind</h1>
+            </a>
+
+            <div class="videocontainer">
+                <video autoplay loop muted playsinline id="MasterMindvid">
+                    <source src="videos/MasterMind.mp4" type="video/mp4">
+                    Old Browser
+                </video>
+            </div>
+
+            <p class="descriptiontext text">
+                Master Mind Ai that solves the code in an average of 4.35 - 4.36 turns. 
+                Looks at all possible guesses and chooses the one that reduces the remaining 
+                possibilities the most by going through all the possible feedback patterns for 
+                each guess and calculating the average information gained for each guess in bits. 
+                Then decides its final guess based on how much information it provides and the 
+                probability that its the real code. Based off 3Blue1Brown's wordle bot.
             </p>
         </div>
 

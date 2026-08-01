@@ -2,11 +2,13 @@ const pong = document.getElementById("Pong")
 const tictactoe = document.getElementById("Tic-Tac-Toe")
 const gravity = document.getElementById("Gravity")
 const calculators = document.getElementById("Calculators")
+const masterMind = document.getElementById("MasterMind")
 
 document.getElementById("Pongvid").play()
 document.getElementById("Tic-Tac-Toevid").play()
 document.getElementById("Gravityvid").play()
 document.getElementById("Calculatorsvid").play()
+document.getElementById("MasterMindvid").play()
 
 function Pong(){
     pong.scrollIntoView({behavior: "smooth"})
@@ -22,4 +24,8 @@ function Gravity(){
 
 function Calculators(){
     calculators.scrollIntoView({behavior: "smooth"})
+}
+
+function MasterMind(){
+    masterMind.scrollIntoView({behavior: "smooth"})
 }
